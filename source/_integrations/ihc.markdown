@@ -63,11 +63,11 @@ The manual configuration must be placed in a `ihc_manual_setup.yaml` file locate
 # Example ihc_manual_setup.yaml entry
 ihc:
   - xx1:
-    - binary_sensor:
+    binary_sensor:
       - id: 12345
         name: switch_front_door
       ...
-    - light:
+    light:
       - id: 12345
         name: tablelight
   - xx2:
@@ -101,13 +101,13 @@ To manually configure IHC Binary Sensors insert the "binary_sensor" section in y
 # Example ihc_manual_setup.yaml entry
 ihc:
   - xx1:
-    - binary_sensor:
-        - id: 12345
-          name: switch_front_door
-          inverting: false
-          note: Magnet contact
-          position: Switch in door
-          type: door
+    binary_sensor:
+      - id: 12345
+        name: switch_front_door
+        inverting: false
+        note: Magnet contact
+        position: Switch in door
+        type: door
 ```
 
 {% configuration %}
@@ -160,7 +160,7 @@ To manually configure IHC sensors insert the "sensor" section in your `ihc_manua
 ```yaml
 ihc:
   - xx1:
-    - sensor:
+    sensor:
       - id: 12345
         name: Temperatur_living_room
         unit_of_measurement: '°C'
@@ -220,7 +220,7 @@ To manually configure IHC lights insert the "light" section in your `ihc_manual_
 ```yaml
 ihc:
   - xx1:
-    - light:
+    light:
       - id: 12345
         name: tablelight
       - id: 23432
@@ -281,7 +281,7 @@ To manually configure IHC switches insert the "switch" section in your `ihc_manu
 ```yaml
 ihc:
   - xx1:
-    - switch:
+    switch:
       - id: 12345
       - id: 12346
 ```
